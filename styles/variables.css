@@ -1,13 +1,49 @@
 :root {
-    --primary-color : ;
+     /*  * Color-text  */
 
-    --primary-bg : ;
-
-    --font-family-size : ;
-
-    --font-size-size : ;
-
-    --margin-size : ;
-    --padding-size : ;
+     --primari-color : black;
+     --secondari-color: antiquewhite;
+     --additional-color: blue;
+     --spare-color: pink;
+ 
+     /* *Background */
+ 
+     --primary-bg :linear-gradient(blue,aqua )  ;
+     --secondari-bg: antiquewhite;
+     --additional-bg: blue;
+     --spare-bg: rgb(154, 177, 231);
+ 
+     /* *font-family */
+  
+     --font-family-title: 'Anton', sans-serif;
+     --font-family-zag: 'Arvo', serif;
+     --font-family-text: 'Roboto', sans-serif;
+  
+     /*  *font-size */
+  
+     --font-size-xl: 3rem ;
+     --font-size-l : 2rem;
+     --font-size-m : 1.5rem;
+     --font-size-s : 1rem;
+  
+     /* *margins */
+  
+     --margin-size-xl : 7rem;
+     --margin-size-l : 2rem ;
+     --margin-size-m : 1rem ;
+     --margin-size-s : .8rem ;
+    
+    
+     /* *paddings */
+    
+     --padding-size-xl : 3rem;
+     --padding-size-l : 2rem ;
+     --padding-size-m : 1rem ;
+     --padding-size-s : .8rem ;
+ 
+     /* *box-shadow */
+ 
+     --primari-bs : 3px 4px 4px rgb(59, 107, 238);
+ 
 }
     
