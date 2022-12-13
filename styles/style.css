@@ -39,6 +39,11 @@ li {
     width: 30%;
 }
 
+.logo{
+    width: 5rem;
+    height: 5rem;
+}
+
 .nav{
     width: 40%;
     display: flex;
@@ -60,10 +65,48 @@ li {
    background: beige;
 }
 
+.reklama-wrapper{
+    height: 4rem;
+    width:100%;
+    background: rgb(140, 226, 226);
+}
+
+.reklama{
+    font-size: var(--font-size-xl);
+    display: flex;
+    align-items: center;
+    color: var(--additional-color);
+    position: relative;
+    left: 0;
+    animation: showElement 5000ms ease-in-out infinite; 
+}
+
+@keyframes showElement{
+    0% {
+        left: -1700px;
+        /* right: 2000px; */
+        /* transform:rotate(0deg); */
+    }
+}
+
 .banner{
     background-image: url(../public/images/banner.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--padding-l);
     height: 90vh;
     position: sticky;
+}
+
+.pointer-left,
+.pointer-right {
+    padding: var(--padding-l);
+    font-size: var(--font-size-xl);
+    color: var(--secondari-color);
 }
 
 .img-wrapper{
