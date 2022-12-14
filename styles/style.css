@@ -322,6 +322,7 @@ li {
 }
 
 .akcia-box p {
+   
     display: inline-block;
     padding-left: 100%;
     animation: marquee 10s linear infinite;
@@ -362,6 +363,15 @@ li {
 
 .footer{
     background: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+}
+
+.img-icon{
+    width: 4rem;
+    height: 4rem;
+    padding: var(--padding-size-m);
+
 }
     
     
