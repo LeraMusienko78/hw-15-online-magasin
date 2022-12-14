@@ -65,28 +65,38 @@ li {
    background: beige;
 }
 
-.reklama-wrapper{
+.reklama-box{
     height: 4rem;
     width:100%;
     background: rgb(140, 226, 226);
+    border: 3px solid gold;
+    display: inline-flex;
 }
+
 
 .reklama{
     font-size: var(--font-size-xl);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: var(--additional-color);
     position: relative;
     left: 0;
-    animation: showElement 5000ms ease-in-out infinite; 
+    animation: showElement 10000ms ease-in-out infinite; 
+   
+   
 }
 
 @keyframes showElement{
     0% {
-        left: -1700px;
-        /* right: 2000px; */
-        /* transform:rotate(0deg); */
+       transform:translate(100%,0);
+       transform: translate(1530px,0);
     }
+    100%{ 
+        transform: translate(-100%,0);
+    } 
+    /* 100%{   
+        transform: translate(40%,0);
+    }    */
 }
 
 .banner{
@@ -98,7 +108,7 @@ li {
     justify-content: space-between;
     align-items: center;
     padding: var(--padding-l);
-    height: 90vh;
+    height: 50vh;
     position: sticky;
 }
 
