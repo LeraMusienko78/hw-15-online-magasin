@@ -8,7 +8,7 @@
  
      /* *Background */
  
-     --primary-bg :linear-gradient(blue,aqua )  ;
+     --primary-bg :linear-gradient(rgb(66, 66, 231),aqua )  ;
      --secondari-bg: antiquewhite;
      --additional-bg: blue;
      --spare-bg: rgb(154, 177, 231);

@@ -88,8 +88,10 @@ li {
     position: relative;
     left: 0;
     animation: showElement 10000ms ease-in-out infinite; 
-   
-   
+}
+
+.reklama:hover{
+    animation-play-state: paused;
 }
 
 @keyframes showElement{
@@ -143,20 +145,24 @@ li {
 .saidebar{
     background: var(--secondari-bg);
     width: 40%;
+    padding: var(--padding-size-xl);
 }
 
 .button-wrapper{
     display: flex;
     justify-content: center;
-    /* margin-top: var(--margin-size-xl); */
 }
 
 .button{
     width: 20rem;
-    height: 2rem;
+    height: 3rem;
     background: var(--spare-bg);
     border-radius: 5%;
-    margin-top: var(--margin-size-xl);
+    margin-top: var(--margin-size-s);
+}
+
+.title__button{
+    font-size: var(--font-size-m);
 }
 
 .button:hover{
@@ -187,6 +193,22 @@ li {
     justify-content: center;
     margin-top: var(--margin-size-l);
     padding: var(--padding-size-m);
+}
+
+.product-akcia{
+    display: flex;
+    justify-content: center;
+    font-size: var(--font-size-l);
+    color: var(--additional-color);
+}
+
+.img-wrapper{
+   display: flex;
+   flex-direction: column; 
+}
+
+.img-akcia{
+    margin-top: var(--margin-size-m);
 }
 
 .main{
@@ -246,26 +268,97 @@ li {
     font-size: var(--font-size-s);
 }
 
+.produkt__akcia-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-akcia{
+    font-size: var(--font-size-xl);
     
+}
+
+.img-akcia{
+    border-radius: 5%;
+    position: relative;
+    left: 0;
+    animation: akciaElement 5550ms ease-in-out infinite;
+}
+
+.img-akcia:hover{
+    animation-play-state: paused;
+}
+
+@keyframes akciaElement{
+    0% {
+        left: -1000px;
+        transform:rotate(0deg);
+    }
+    25% {
+        transform:rotate(0deg);
+    }
+    75% {
+        transform:rotate(180deg);
+    }
+    75% { 
+        transform:rotate(360deg);
+        left: 0px;
+    } 
+
+}
+
+.akcia-box{
+   width: 90%;
+   height: 5rem;
+   margin: 0 auto;
+   font-size:var(--font-size-xl);
+   color:var(--additional-color);
+   white-space: nowrap;
+   overflow: hidden;
+   border-radius:4px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+   background: aqua;
+}
+
+.akcia-box p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 10s linear infinite;
+ }
+ 
+ .akcia-box p:hover {
+    animation-play-state: paused;
+ }
+ 
+ @keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+ }
+
+
 .button-wrapper__product{
     display: flex;
     justify-content: space-between;
     margin-top: var(--margin-size-m);
-    
-   
 }
 
 .button__title-company{
     width: 15rem;
+    border-radius: 5%;
+   background: inherit;
+}
+
+.button__title-company:hover{
+    box-shadow: var(--primari-bs);
 }
 
 .title-company{
-   
+   display: flex;
+   justify-content: center;
+   font-size: var(--font-size-s);
 }
 
-.price__product{
-    margin-top: var(--margin-size-m);
-}
 
 .footer{
     background: var(--primary-bg);
